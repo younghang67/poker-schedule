@@ -1,0 +1,182 @@
+/* 
+Theme Name: Hello Elementor Child
+Theme URI: https://github.com/elementor/hello-theme/
+Description: Hello Elementor Child is a child theme of Hello Elementor, created by Elementor team
+Author: Elementor Team
+Author URI: https://elementor.com/
+Template: hello-elementor
+Version: 1.0.1
+Text Domain: hello-elementor-child
+License: GNU General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
+*/
+
+/*
+    Add your custom styles here
+*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+/* -----------------------filter-css-------------------- */
+.filter-border {
+  border: 1px solid rgb(54, 54, 54);
+}
+.title {
+  padding: 0.5rem;
+  border-bottom: 1px solid #e75297;
+  background-color: #e75297;
+  color: white;
+}
+.title h3 {
+  margin: 0;
+  padding-block: 5px;
+}
+.ticket_content {
+  box-sizing: border-box;
+  padding: 0.5rem;
+}
+.calender {
+  display: flex;
+  justify-content: space-between;
+}
+.calender-divider {
+  font-size: 25px;
+}
+
+.calender-from,
+.calender-to {
+  flex-basis: 47%;
+}
+.game-form {
+  padding: 9px;
+}
+.btn {
+  padding-inline: 65px;
+  padding-block: 6px;
+  border-color: #e75297;
+  background-color: #e75297;
+  color: white;
+  letter-spacing: 4px;
+}
+.btn:hover {
+  background-color: #e75297;
+}
+/* ----------------------- //filter-css-------------------- */
+h6 {
+  font-family: "Open Sans", sans-serif;
+}
+.cus-eventdate,
+.cus-game {
+  margin-top: 1rem;
+}
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  /* padding: 0.5rem; */
+}
+.form-select {
+  max-width: 100%;
+  width: 100%;
+}
+.form-select option {
+  width: 100%;
+  word-wrap: break-word;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+.cus-form1 {
+  /* border: 5px solid red; */
+  flex-basis: 50%;
+  padding-right: 0.2rem;
+  overflow-x: hidden;
+}
+
+.cus-form2 {
+  /* border: 5px solid blue; */
+  flex-basis: 50%;
+  padding-left: 0.2rem;
+}
+.cus-from-check {
+  padding: 0.3rem;
+}
+.check-box-text {
+  display: inline-block;
+  padding: 5px;
+  margin: 0;
+}
+.table-note {
+  margin: 0;
+  padding-block: 10px;
+}
+.cus-table-wrapper {
+  display: flex;
+}
+.cus-schedule-table {
+  width: 100%;
+  padding-left: 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.table-topic{
+  background-color: #e75297 !important;
+  color: white !important;
+}
+table td,
+table th {
+  vertical-align: middle;
+}
+@media screen and (max-width: 780px) {
+  .title h3 {
+    font-size: 23px;
+  }
+  .ticket_content,
+  .h6 {
+    font-size: 1rem;
+    margin-bottom: 13px;
+  }
+  .form-wrapper {
+    flex-direction: column;
+  }
+  .calender {
+    flex-direction: column;
+  }
+  .calender-divider {
+    font-size: 0px;
+  }
+  .form-select,
+  .form-control {
+    font-size: 15px;
+    padding: 6px !important;
+  }
+  .cus-table-wrapper {
+    flex-direction: column;
+  }
+  .cus-schedule-table table th {
+    font-size: 0.8rem;
+    vertical-align: middle;
+  }
+  .cus-schedule-table table td {
+    padding: 0.6rem 0.3rem;
+    font-size: 0.7rem;
+    vertical-align: middle;
+  }
+}
+@media screen and (max-width: 350px){
+  .cus-schedule-table table th {
+    font-size: 0.5rem;
+    vertical-align: middle;
+  }
+  .cus-schedule-table table td {
+    padding: 0.6rem 0.3rem;
+    font-size: 0.5rem;
+    vertical-align: middle;
+  }
+}
